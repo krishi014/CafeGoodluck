@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="cart.css">
+    
+    <title>Add to cart</title>
+
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <h1 class="navbar-brand">Cafe Goodluck</h1>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#Explore" id="navbarDropdown" role="button">
+                Menu
+              </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Drinks</a>
+                <a class="dropdown-item" href="#">South Indian</a>
+                <a class="dropdown-item" href="#">Sanwiches</a>
+                <a class="dropdown-item" href="#">Punjabi Dishes</a>
+              </div> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-light my-2 my-md-0" type="submit"  style="border-radius: 1rem;">Sign in</button>
+          </form>
+        </div>
+      </nav>
+
+    
+      <div class="heading">
+         <h1> Cafe Goodluck's Menu</h1>
+      </div>
+
+        <div class="menu-container">
+            <div class="cafe breads_and_Drinks" style="max-width: 240px; border-color: black;" >
+                <img src="bun maska.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit:contain;">
+                <div class="card-body">
+                  <h5 class="card-title">Bun Maska</h5>
+                  <p class="card-text"><large>Rs 50</large> </p>
+                  <button class="btn btn-outline-danger btn-md" onclick="addToCart('Bun Maska',50)">Add Item</button>
+                </div>
+               </div> 
+    
+               <div class="cafe breads_and_Drinks" style="max-width: 240px;" id="Breads_and_drinks">
+                <img src="Iranitea.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                <div class="card-body">
+                  <h5 class="card-title">Irani Chai</h5>
+                  <p class="card-text"><large>Rs 20</large></p>
+                  <button class="btn btn-outline-danger btn-md" onclick="addToCart('Irani Chai',20)">Add Item</button>
+                </div>
+              </div>
+
+              <div class="cafe Sandwich " style="max-width: 240px;" id="Sandwich">
+                <img src="sandwiches.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                <div class="card-body">
+                  <h5 class="card-title">Sandiwch</h5>
+                  <p class="card-text"><large>Rs 180</large></p>
+                  <button class="btn btn-outline-danger btn-md" onclick="addToCart('Sandwich',180)">Add Item</button>
+                </div>
+              </div>
+    
+              <div class="cafe Punjabi" style="max-width: 240px;" id="Punjabi_Dishes">
+                <img src="paneerbhurji.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                <div class="card-body">
+                  <h5 class="card-title">Paneer Bhurji(Goodluck Special)</h5>
+                  <p class="card-text"><large>Rs 200</large></p>
+                  <button class="btn btn-outline-danger btn-md" onclick="addToCart('Panner Bhurji(Goodluck Special)',200)">Add Item</button>
+                </div>
+              </div>
+    
+              <div class="cafe Punjabi" style="max-width: 240px;" id="Punjabi_Dishes">
+                <img src="paneer-butter-masala-.webp" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                <div class="card-body">
+                  <h5 class="card-title">Panner Butter Masala</h5>
+                  <p class="card-text"><large>Rs 250</large></p>
+                  <button class="btn btn-outline-danger btn-sm" onclick="addToCart('Paneer-butter-masala',250)">Add Item</button>
+                </div>
+              </div>
+    
+              <div class="cafe Punjabi" style="max-width: 240px;" id="Punjabi_Dishes">
+                <img src="naan.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                <div class="card-body">
+                  <h5 class="card-title"> Butter Naan</h5>
+                  <p class="card-text"><large>Rs 70</large></p>
+                  <button class="btn btn-outline-danger btn-sm" onclick="addToCart('Butter Naan',70)">Add Item</button>
+                </div>
+              </div> 
+            
+    
+              <div class="cafe Punjabi" style="max-width: 240px;" id="Punjabi_Dishes">
+                <img src="dosa.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                <div class="card-body">
+                  <h5 class="card-title">Dosa</h5>
+                  <p class="card-text"><large>Rs 150</large></p>
+                  <button class="btn btn-outline-danger btn-sm" onclick="addToCart('Dosa',150)">Add Item</button>
+                </div>
+              </div>
+          
+              <div class="cafe Punjabi" style="max-width: 240px;" id="Punjabi_Dishes">
+                <img src="friedrice.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                <div class="card-body">
+                  <h5 class="card-title">Fried Rice</h5>
+                  <p class="card-text"><large>Rs 180</large></p>
+                  <button class="btn btn-outline-danger btn-sm" onclick="addToCart('Fried rice',180)">Add Item</button>
+                </div>
+              </div>
+
+            </div> 
+           </div>  
+
+      <!-- Cart Section -->
+      <div class="cart-container" id="cart">
+          <h2>Cart</h2>
+          <!-- Cart items will be displayed here -->
+          <div id="cart-items"></div>
+          <p id="totalAmount">Total: Rs. 0</p>
+          <!-- Checkout button always visible -->
+          <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+      </div>
+ 
+      <hr>
+      <!-- Footer -->
+       <div class=" "></div>
+      <footer class="footer" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <i class="fa-regular fa-envelope"></i> cafeGoodluck@example.com <br>
+              <i class="fa-solid fa-phone"></i> 0254692182
+             </div>
+            <div class="col-md-4">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://www.google.com/maps/place/Cafe+Goodluck/@18.516223,73.8365472,16.07z/data=!3m1!5s0x3bc2bf87fb7da445:0xa9593e3253ba3f5a!4m6!3m5!1s0x3bc2bf87fad7cce1:0x782ac3a113379b17!8m2!3d18.5173065!4d73.8414661!16s%2Fm%2F0vpx53c?entry=ttu">Visit Us</a></li>
+                <li><a href="#">FAQ</a></li>
+              
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center">Copyright &copy; Krishi Taank.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+   
+    
+
+      <script>
+        function selectOption(option) {
+          document.getElementById("selectedOption").textContent = option;
+          // Show all items initially
+          const pizzaItems = document.querySelectorAll('.cafe');
+          pizzaItems.forEach(item => {
+            item.style.display = 'block';
+          });
+        
+        }
+        
+        let cartItems = [];
+        
+        function addToCart(itemName, price) {
+          // Check if the item already exists in the cart
+          const existingItem = cartItems.find(item => item.name === itemName);
+          if (existingItem) {
+            // If the item exists, update the quantity and amount
+            existingItem.quantity++;
+            existingItem.amount += price;
+          } else {
+            // If the item doesn't exist, add it to the cart
+            cartItems.push({ name: itemName, price: price, quantity: 1, amount: price });
+          }
+          updateCart();
+        }
+        
+        function updateCart() {
+          const cartElement = document.getElementById('cart-items');
+          const totalElement = document.getElementById('totalAmount');
+          cartElement.innerHTML = '';
+          let totalAmount = 0;
+          cartItems.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('cart-item');
+            itemElement.innerHTML = `<p>${item.name} - Rs.${item.price} (Qty: ${item.quantity}, Amt: Rs.${item.amount})</p>`;
+            cartElement.appendChild(itemElement);
+            totalAmount += item.amount;
+          });
+          totalElement.textContent = `Total: Rs. ${totalAmount}`;
+        
+          // Show checkout button
+          const checkoutBtn = document.getElementById('checkoutBtn');
+          checkoutBtn.style.display = 'block';
+        }
+        
+        function checkout() {
+          alert('Thank you for your purchase!');
+          cartItems = [];
+          updateCart();
+        }
+        </script>
+   
+
+
+    
+</body>
+</html>

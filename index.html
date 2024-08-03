@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Goodluck Cafe</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <h1 class="navbar-brand">Cafe Goodluck</h1>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#Explore" id="navbarDropdown" role="button">
+                Menu
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="cart.html" id="navbarDropdown" role="button">
+                Order Now
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-light my-2 my-md-0" type="submit"  style="border-radius: 1rem;">Sign in</button>
+          </form>
+        </div>
+      </nav>
+ 
+
+      <!-- Best Sellers -->
+      <div class="BestSellers" id="Home">
+        <h2>Our Best Sellers</h2>
+        <div class="row">
+            <div class="sellers">
+                <img src="Iranitea.jfif" class="rounded-circle"  height="150px" width="160px">
+                <h5>Irani Chai</h5>
+            </div>
+            <div class="sellers">
+                <img src="bun maska.jfif" class="rounded-circle"  height="150px" width="150px">
+                <h5>Bun Maska</h5>
+             </div> 
+            <div class="sellers">
+                <img src="sandwiches.jfif" class="rounded-circle"  height="150px" width="160px">
+                <h5>Sandiwch</h5>
+            </div>
+            <div class="sellers">
+                <img src="south Indian.jfif" class="rounded-circle" height="150px" width="160px">
+                <h5>South Indian Dishes</h5>
+             </div>
+
+             <div class="sellers">
+                <img src="dosa.jfif" class="rounded-circle" height="150px" width="160px">
+                <h5>Dosa</h5>
+            </div> 
+       
+        </div>
+     </div>
+
+    <h2>Explore Menu</h2>
+    <div class="container" id="Explore">
+        <div class="row">
+          <div class="col-12">
+            <div class="card-menu">
+              <div class="card-menu-inner">
+
+                <div class="card mb-3" style="max-width: 240px; border-color: black;">
+                  <img src="bun maska.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit:contain;">
+                  <div class="card-body">
+                    <h5 class="card-title">Bun Maska</h5>
+                    <p class="card-text"><large>Rs 50</large> </p>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 240px;">
+                  <img src="Iranitea.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                  <div class="card-body">
+                    <h5 class="card-title">Irani Chai</h5>
+                    <p class="card-text"><large>Rs 20</large></p>
+               
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 240px;">
+                  <img src="sandwiches.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                  <div class="card-body">
+                    <h5 class="card-title">Sandiwch</h5>
+                    <p class="card-text"><large>Rs 180</large></p>
+                  </div>
+                </div>
+                  
+                <div class="card mb-3" style="max-width: 240px;">
+                  <img src="paneerbhurji.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                  <div class="card-body">
+                    <h5 class="card-title">Paneer Bhurji(Goodluck Special)</h5>
+                    <p class="card-text"><large>Rs 200</large></p>
+                  </div>
+                </div>
+
+                <div class="card mb-3" style="max-width: 240px;">
+                  <img src="paneer-butter-masala-.webp" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                  <div class="card-body">
+                    <h5 class="card-title">Panner Butter Masala</h5>
+                    <p class="card-text"><large>Rs 250</large></p>
+                  </div>
+                </div>
+
+                <div class="card mb-3" style="max-width: 240px;">
+                  <img src="naan.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                  <div class="card-body">
+                    <h5 class="card-title"> Butter Naan</h5>
+                    <p class="card-text"><large>Rs 70</large></p>
+                  </div>
+                </div> 
+
+                <div class="card mb-3" style="max-width: 240px;">
+                  <img src="dosa.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                  <div class="card-body">
+                    <h5 class="card-title">Dosa</h5>
+                    <p class="card-text"><large>Rs 150</large></p>
+                  </div>
+                </div>
+
+                <div class="card mb-3" style="max-width: 240px;">
+                  <img src="friedrice.jfif" class="card-img-top" alt="Coffee Image" style="width: 200px; height: 170px; object-fit: contain;">
+                  <div class="card-body">
+                    <h5 class="card-title">Fried Rice</h5>
+                    <p class="card-text"><large>Rs 180</large></p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <br><br>
+      <div id="about">
+        <h2>About Us</h2>
+        <blockquote>
+          <h5>One of the most iconic breakfast spots in the city, this cafe celebrates the good old days.</h5>
+          <p>In 1932, Narayan Seth bought a small place in the Deccan Gymkhana area that was taken over by Hussain Ali Yakshi, who set up a food joint here in 1935. One of the most popular Irani joints in Pune today, Cafe Goodluck is a culinary gem.</p><br>
+          <p>Goodluck Cafe began as a tiny shop. The space earlier served as a cycle repair shop, mechanic shop, and other smaller joints. Though the cafe’s location has not changed, the ambience has. In its early days, Cafe Goodluck had wooden chairs. However, since these were not easily repairable, the cafe switched to plastic chairs. The whole cafe, including the tiles, were damaged in the 1961 floods of Pune. It has three dining halls. As you enter, to your left and right are areas for breakfast. The third one is a narrow lane, lined with chairs and tables, mainly for lunchtime. The waiters come to your table to take and serve the order. The service is very quick.</p><br>
+          <p>Cafe Goodluck has a staff of 50–70. Most members of the staff do not come from a restaurant service background. Yakshi has, therefore, had to train them in the business. Whenever a member is absent, he takes their place himself. He maintains a good rapport with his staff.</p>
+        </blockquote>
+      </div>
+
+     
+
+     <hr>
+      <!-- Footer -->
+      <footer class="footer" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <i class="fa-regular fa-envelope"></i> cafeGoodluck@example.com <br>
+              <i class="fa-solid fa-phone"></i> 0254692182
+             </div>
+            <div class="col-md-4">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://www.google.com/maps/place/Cafe+Goodluck/@18.516223,73.8365472,16.07z/data=!3m1!5s0x3bc2bf87fb7da445:0xa9593e3253ba3f5a!4m6!3m5!1s0x3bc2bf87fad7cce1:0x782ac3a113379b17!8m2!3d18.5173065!4d73.8414661!16s%2Fm%2F0vpx53c?entry=ttu">Visit Us</a></li>
+                <li><a href="#">FAQ</a></li>
+              
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center">Copyright &copy; Krishi Taank.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+   
+</body>
+</html>

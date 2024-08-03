@@ -1,0 +1,152 @@
+.navbar {
+    background-color: #c71a1a;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar-brand {
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: #f8f2f1;
+
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+    gap: 30px;
+  }
+  
+  .nav-link {
+    color: #f9efef;
+    transition: color 0.2s ease;
+    font-size:larger;
+  }
+  
+  .nav-link:hover {
+    color:rgb(246, 248, 243);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+ .heading  {
+    width: 70%;
+    float: left;
+    padding-right: 20px;
+    margin-top: 125px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(23, 22, 22);
+  } 
+
+   .heading h1{
+    font-size: 300;
+    font-family:"Ga Maamli", sans-serif; 
+    color: darkred;
+  } 
+
+  .menu-container {
+    padding-top: 10px;
+    width: 65%;
+    float: left;
+    padding-right: 90px;
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between menu items */
+  }
+  
+
+  .cafe {
+    border: 1px solid #161515;
+    padding-top: 10px;
+    background-color: #fdf2f1;
+    text-align: center;
+    width: calc(30% - 20px); /* Calculate width with gap */
+    margin-bottom: 20px; /* Adjust the margin-bottom */
+  }
+  
+  @media (max-width: 992px) {
+    .cafe {
+      width: calc(50% - 20px);
+    }
+  }
+
+  .cart-container {
+    width: 30%;
+    float: right;
+    padding: 50px;
+    background-color: #f3c8b3;
+    margin-top: 30px;
+    border-color: #161515;
+    border-radius: 1rem;
+  }
+  .cart-container h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+  }
+  
+  .cart-item {
+    margin-bottom: 10px;
+  }
+  
+  .cart-item p {
+    margin: 0;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  
+.footer {
+  background-color: #cb1414;
+  color: #fff;
+  margin-top: 1400px;
+  padding-top:80px; 
+  
+}
+
+.footer h5 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ccc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer .social-links {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.footer .social-links i {
+  margin-right: 10px;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: #f9f1f1;
+  margin-top: 20px;
+}
